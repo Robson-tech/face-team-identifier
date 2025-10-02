@@ -15,19 +15,7 @@ O sistema é composto por **4 containers** principais:
 
 ### 📊 Fluxo de Dados
 
-```
-[Gerador] ---> [RabbitMQ Topic Exchange] ---> [Consumidor Face]
-    |                                              |
-    |          Routing Keys:                       v
-    |          - image.face                  [Análise IA]
-    |          - image.team                  [Sentimento]
-    |                                              
-    +----------> [RabbitMQ Topic Exchange] ---> [Consumidor Team]
-                                                   |
-                                                   v
-                                             [Análise IA]
-                                             [Identificação]
-```
+![Fluxo de Dados](telas/Fluxo_de_Dados.png)
 
 ## 🚀 Como Executar
 
