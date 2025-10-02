@@ -93,16 +93,18 @@ Acesse **http://localhost:15672** para monitorar:
 - **Usuário**: admin
 - **Senha**: admin123
 
-#### Exemplo de Monitoramento das Filas
+#### Status das Filas no RabbitMQ (acúmulo de mensagens)
 
-![Filas RabbitMQ](telas/Filas_Rabbit_MQ.png)  
+![Filas RabbitMQ](telas/Filas_Rabbit_MQ.png) 
+### Analise da fila de faces 
 ![Queue Face Analysis](telas/Queue_Face_Analise.png)
-
+### Analise da fila de times 
+![Queue Face Analysis](telas/Queue_Time_Analise.png)
 
 #### O que observar:
 - **Exchanges**: `image_processing_exchange` (tipo Topic)
 - **Filas**: `face_analysis_queue` e `team_identification_queue`
-- **Taxa de mensagens**: ~6-7 mensagens/segundo sendo produzidas
+- **Taxa de mensagens**: ~5-6 mensagens/segundo sendo produzidas
 - **Acúmulo**: Filas devem acumular mensagens (consumidores processam lentamente)
 
 ### Logs dos Containers
