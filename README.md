@@ -1,0 +1,1 @@
+# Sistema de Carga com IA - Processamento Distribuído de Imagens
